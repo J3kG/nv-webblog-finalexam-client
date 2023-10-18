@@ -1,18 +1,18 @@
 import Api from '@/services/Api'
 export default {
     index(search) {
-        return Api().get('users')
+        return Api().get('courses')
     },
-    show(userId) {
-        return Api().get('user/' + userId)
+    show(courseId) {
+        return Api().get('course/' + courseId)
     },
-    post(user) {
-        return Api().post('user', user)
+    post(course) {
+        return Api().post('course', course)
     },
-    put(user) {
-        return Api().put('user/' + user.id, user)
+    put(course) {
+        return Api().put('course/' + course.id, course)
     },
-    delete(user) {
-        return Api().delete('user/' + user.id, user)
+    delete(course) {
+        return Api().delete('course/' + course.id, course)
     },
 }

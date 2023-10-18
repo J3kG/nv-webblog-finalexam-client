@@ -14,7 +14,7 @@
         <button v-on:click="navigateTo('/course/' + course.id)">
           ดูข้อมูลรายวิชา
         </button>
-        <button v-on:click="navigateTo('/course/edit/' + user.id)">
+        <button v-on:click="navigateTo('/course/edit/' + course.id)">
           แก้ไขข้อมูล
         </button>
         <button v-on:click="deleteUser(course)">ลบข้อมูล</button>
